@@ -109,7 +109,6 @@ async function handleDeleteTodo() {
 
 async function handleTodoStatus() {
     const todoId = this.parentElement.dataset.id;
-    console.log(todoId)
     const changeStatusQuery = `mutation ChangeStatus {
         updateTodo(id: "${todoId}", input: { completed: ${this.checked} }) {
             completed
