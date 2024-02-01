@@ -1,0 +1,14 @@
+{
+  "homepage": "https://dashamogacheva.github.io/graphQLTodos/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.3",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8.4.33"
+  }
+}
